@@ -58,3 +58,16 @@ button.addEventListener("click" , (event)=>{
 window.addEventListener=("load" , ()=>{
     update_exchange_rate();
 });
+
+const btn = document.querySelector("#convert_button");
+const container = document.querySelector(".container");
+
+btn.addEventListener("click", (e) => {
+    e.preventDefault(); 
+
+    const colors = ["#c53f3f", "#00fff2", "#16A34A", "#9333EA", "#F59E0B"];
+
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    container.style.backgroundColor = randomColor;
+});
