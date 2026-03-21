@@ -1,48 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="container">
+
+<body style="
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+width:100vw;
+background-image:url('assets/currency_converter_image.jpg');
+background-image:cover;
+">
+    <div class="container" style="
+background-color:rgb(1, 105, 208, 0.8);
+    padding:2rem;
+    height:50vh;
+    border-radius:2rem;
+    width:40vh;
+    color:white;
+">
         <h2>
             Currency Converter
         </h2>
-        <form>
-            <div class="amount">
-                <p>Amount</p>
-                <input placeholder="Enter your amount" type="Text">
+        <form style="margin:2rem 0 1rem 0;">
+            <div class="amount" 
+            <p>Amount</p>
+                <input placeholder="Enter your amount" type="Text" style="
+    background-color:lightgrey;
+    height:2rem;
+    font-size:1rem;
+    padding-left:0.75rem;
+    border:1px solid grey;
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:1.5rem;
+    ">
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown" style="
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:2rem;
+">
                 <div class="from">
                     <p>From</p>
-                    <div class="select_container">
-                        <img src="https://flagsapi.com/US/flat/64.png">
-                        <select name="from">
-                            
+                    <div class="select_container" style="
+display:flex;
+    width:6rem;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    background-color:lightgrey;
+    border-radius:0.5rem;
+    border:1px solid grey;
+">
+                        <img src="https://flagsapi.com/US/flat/64.png" style="max-width:2.5rem;
+    border-radius:2rem;">
+                        <select name="from" style="
+max-width:2.5rem;
+    border-radius:2rem;
+">
                         </select>
                     </div>
                 </div>
-                <i class="fa-solid fa-right-left"></i>
+                <i class="fa-solid fa-right-left" style="cursor:pointer;"></i>
                 <div class="to">
                     <p>To</p>
-                    <div class="select_container">
-                        <img src="https://flagsapi.com/IN/flat/64.png">
-                        <select name="to">
-
+                    <div class="select_container" style="
+    display:flex;
+    width:6rem;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    background-color:lightgrey;
+    border-radius:0.5rem;
+    border:1px solid grey;
+">
+                        <img src="https://flagsapi.com/IN/flat/64.png" style="max-width:2.5rem; border-radius:2rem;">
+                        <select name="to" style="
+max-width:2.5rem;
+border-radius:2rem;
+">
                         </select>
                     </div>
                 </div>
             </div>
-            <div class="msg">
+            <div class="msg" style="
+margin: 1.2rem 0 1.5rem 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#E6ECFF;
+    border-radius:2rem;
+    height:1.5rem;
+    color:black;">
                 1USD = 92INR
             </div>
-            <button type="submit">
+            <button type="submit" style="
+background-color:#1F3A8A;
+height:2.7rem;
+margin:3rem 0;
+color:linen;
+font-size:1rem;
+cursor:pointer;
+width:100%;
+    border:none;
+    outline:none;
+    border-radius:1.5rem;
+">
                 Get Exchange Rate
             </button>
         </form>
@@ -50,4 +125,5 @@
     <script src="list.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
